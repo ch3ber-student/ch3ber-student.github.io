@@ -1,2 +1,7 @@
 @import url('./base/reset.css');
 @import url('./base/globals.css');
+@import url('./base/utils.css');
+@import url('./base/vars.css');
+
+@import url('./layout/main.css');
+@import url('./layout/footer.css');

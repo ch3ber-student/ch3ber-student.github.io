@@ -1,0 +1,32 @@
+.footer {
+  background-color: #ddd;
+  padding: 4rem;
+  color: rgb(73, 73, 73);
+  text-align: left;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+  }
+}
+.footer__contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer__contact {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.footer__link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+  transition: opacity 300ms linear;
+}
