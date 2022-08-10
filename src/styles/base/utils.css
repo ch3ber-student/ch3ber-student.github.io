@@ -20,3 +20,34 @@
   max-width: min(90%, var(--container-size));
   margin: 0 auto;
 }
+.auto-grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  place-content: center;
+}
+.button-right {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4rem);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: .8rem 1.6rem;
+  background-color: rgb(56, 122, 216);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  transition: opacity 300ms linear;
+  -webkit-transition: opacity 300ms linear;
+  -moz-transition: opacity 300ms linear;
+  -ms-transition: opacity 300ms linear;
+  -o-transition: opacity 300ms linear;
+  color: #fff;
+}
+.button-right:hover {
+  cursor: pointer;
+  opacity: .8;
+}
